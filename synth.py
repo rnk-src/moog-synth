@@ -92,7 +92,6 @@ class Synth:
 
         filtered_func = self.low_pass_filter(func, current_cutoff)
 
-        # Apply the envelope
         envelope = self.generate_envelope(duration)
         final_signal = filtered_func * envelope
 
